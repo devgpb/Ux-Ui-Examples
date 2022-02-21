@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Classes Auxiliares */ 
+
+.container{
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{clear: both;}
+
+
+header{
+    background-color: #333;
+    padding: 4px 0;
+}
+
+/* Classes Expecíficas */
+
+.logo-desktop{
+    float: left;
+}
+
+
+.logo-desktop a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+nav.mobile{display: none;}
+
+nav.desktop{
+    float: right;
+}
+
+nav.desktop li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/* Efeitos */
+
+nav.desktop a:hover{
+    text-decoration: underline;
+}
+
+
+/* Desing Responsivo */
+
+@media screen and (max-width:768px){
+
+    div.logo-desktop,nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        position: relative;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo-mobile a{
+        text-decoration: none;
+        position: relative;
+        display: block;
+        color: white;
+        font-size: 18px;
+        
+        
+    }
+
+    nav.mobile h3{
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: white;
+    }
+
+    nav.mobile ul{
+        display: none;
+        background-color: #333;
+        position: absolute;
+        left: -2%;
+        top: 25px;
+        width: 104%;
+        text-align: center;
+    }
+
+    nav.mobile li{
+        padding: 8px 0;
+        border-top: 1px solid white;
+    }
+
+    nav.mobile a{
+        color: white;
+        text-decoration: none;
+    }
+}
