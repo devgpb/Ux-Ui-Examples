@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/91e791a30b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltips</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            max-width: 1100px;
+            padding: 0 2%;
+            margin: 0 auto;
+        }
+
+        .container p{
+            margin-top: 10px;
+        }
+
+        .container p.tooltip_box{
+            display: inline-block;
+            border-bottom: 1px dotted #ccc;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .tooltip{
+            opacity: 0;
+            position: absolute;
+            top: 16px;
+            right: -50px;
+            width: 120px;
+            padding: 8px 4px;
+            background: black;
+            color: white;
+            transition: 1s;
+        }
+
+        p.tooltip_box:hover .tooltip{
+            opacity: 1;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Tooltips -->
+    <div class="container">
+        <p class="tooltip_box"> <span class="tooltip">Mais informações hahaha caiu no conto.</span><i class="fa fa-info-circle" aria-hidden="true"></i> Passe o mouse por esse texto para saber mais sobre o caso</p>
+        <p>Filósofos, cientistas e sociólogos se reuniram para a maneira mais eficiente e rápida, de se tornar um milionário, muitos deles trocaram de profissão e hoje vivem em uma vida luxuosa.</p>
+    </div>
+
+
+</body>
+</html>
